@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>重装windows系统</title>
+    <url>/2020/05/23/%E9%87%8D%E8%A3%85windows%E7%B3%BB%E7%BB%9F/</url>
+    <content><![CDATA[<h1 id="电脑重装系统"><a href="#电脑重装系统" class="headerlink" title="电脑重装系统"></a>电脑重装系统</h1><blockquote>
+<p>献给我部门的师弟师妹们。</p>
+</blockquote>
+<a id="more"></a>
+<h1 id="第一步：制作优盘启动"><a href="#第一步：制作优盘启动" class="headerlink" title="第一步：制作优盘启动"></a>第一步：制作优盘启动</h1><ul>
+<li>准备好一个8GB的优盘，请事先备份好数据，因为制作优盘启动器会格式化优盘</li>
+</ul>
+<ul>
+<li><p>下载制作优盘工具，这里我以<a href="http://www.wepe.com.cn/download.html" target="_blank" rel="noopener">微PE工具箱</a>为例。</p>
+<ul>
+<li><p>下载安装完毕后打开，并插入优盘。如图所示，选择安装至优盘&gt;默认安装就行<img src="https://tva1.sinaimg.cn/large/007S8ZIlgy1gf2myd41xfj30v30jlmyn.jpg" alt="微PE"> </p>
+</li>
+<li><p>在安装的同时，我们可以去下载windows镜像文件。推荐去，<a href="https://msdn.itellyou.cn/" target="_blank" rel="noopener">MSDN</a>下载。如图所示：<img src="https://tva1.sinaimg.cn/large/007S8ZIlgy1gf2mz3gibnj31c00u04qp.jpg" alt="MSDN"><br>我们选择【操作系统】&gt;【windows10,1903版本】&gt;【consumer editions】 这里我们选择consumer_editions版本，两个版本其实<a href="https://blog.csdn.net/qq_36707431/article/details/104787417" target="_blank" rel="noopener">区别不大</a>。</p>
+<ul>
+<li>下载完毕后，我们来打开电脑，发现会多了两个分区，其中一个为【EFI】分区，我们不管它。找另一个分区，在里面新建文件夹取名为”windows10”，将刚下载好的windows10 1903镜像拷贝到该路径。这样一个优盘启动工具制作完成。</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h1 id="第二步：设置优盘启动"><a href="#第二步：设置优盘启动" class="headerlink" title="第二步：设置优盘启动"></a>第二步：设置优盘启动</h1><ul>
+<li>以宏碁电脑为例，关机状态下插入优盘，开机并按【F2】进入<a href="https://www.jianshu.com/p/95c9d5dc8443" target="_blank" rel="noopener">BIOS系统</a>，方向键移动到【Boot】选项，将硬盘启动顺序为优盘启动。按【F10】保存并退出。重启后就进入微PE系统了。</li>
+</ul>
+<hr>
+<h1 id="第三步：安装系统"><a href="#第三步：安装系统" class="headerlink" title="第三步：安装系统"></a>第三步：安装系统</h1><ul>
+<li>进入系统后，打开【此电脑】&gt;【优盘启动器】&gt;【windows10】&gt;【双击镜像文件】&gt;【setup.exe】</li>
+<li>打开【setup.exe】后，按提示进入安装程序。选择【windows10专业版】&gt; 【自定义安装】&gt;【系统盘】&gt;【格式化】&gt;【下一步】&gt;【走安装进度】&gt;【安装完成】</li>
+<li>漫长的安装指引。</li>
+</ul>
+<hr>
+<h1 id="第四步：激活系统"><a href="#第四步：激活系统" class="headerlink" title="第四步：激活系统"></a>第四步：激活系统</h1><ul>
+<li>用数字激活软件，联网激活。</li>
+</ul>
+]]></content>
+      <categories>
+        <category>win</category>
+      </categories>
+      <tags>
+        <tag>system</tag>
+        <tag>win</tag>
+        <tag>优盘启动</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Mac软件无法打开或已损坏情况</title>
+    <url>/2020/05/23/Mac%E8%BD%AF%E4%BB%B6%E6%97%A0%E6%B3%95%E6%89%93%E5%BC%80%E6%88%96%E5%B7%B2%E6%8D%9F%E5%9D%8F%E6%83%85%E5%86%B5/</url>
+    <content><![CDATA[<h1 id="关于Mac软件无法启动的解决办法"><a href="#关于Mac软件无法启动的解决办法" class="headerlink" title="关于Mac软件无法启动的解决办法"></a>关于Mac软件无法启动的解决办法</h1><p>出现已损坏无法打开解决办法：</p>
+<a id="more"></a>
+<ul>
+<li><p>请在系统偏好设置-安全性与隐私-选择【任何来源】，即可使用。<br>若无该选项：<br><em>运行终端，输入以下命令，回车输入密码</em> </p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">sudo spctl --master-disable</span><br></pre></td></tr></table></figure>
+
+<p><em>打开安全性与隐私，任何来源已显示</em></p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>若运行软件显示“打不开或者显示应用已损坏的情况”</li>
+<li>运行终端，输入以下命令，回车输入密码即可*</li>
+</ul>
+ <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">sudo xattr -d com.apple.quarantine &#x2F;Applications&#x2F;xxxx.app</span><br></pre></td></tr></table></figure>
+<p>其中 <del>xxxx.app</del> 指该应用的具体名称</p>
+<hr>
+]]></content>
+      <categories>
+        <category>MacOS</category>
+      </categories>
+      <tags>
+        <tag>MacOs</tag>
+      </tags>
+  </entry>
+</search>
