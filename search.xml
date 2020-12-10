@@ -33,6 +33,34 @@
       </tags>
   </entry>
   <entry>
+    <title>Mac软件无法打开或已损坏情况</title>
+    <url>/2020/05/23/Mac%E8%BD%AF%E4%BB%B6%E6%97%A0%E6%B3%95%E6%89%93%E5%BC%80%E6%88%96%E5%B7%B2%E6%8D%9F%E5%9D%8F%E6%83%85%E5%86%B5/</url>
+    <content><![CDATA[<h1 id="关于Mac软件无法启动的解决办法"><a href="#关于Mac软件无法启动的解决办法" class="headerlink" title="关于Mac软件无法启动的解决办法"></a>关于Mac软件无法启动的解决办法</h1><p>出现已损坏无法打开解决办法：</p>
+<a id="more"></a>
+<ul>
+<li><p>请在系统偏好设置-安全性与隐私-选择【任何来源】，即可使用。<br>若无该选项：<br><em>运行终端，输入以下命令，回车输入密码</em> </p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">sudo spctl --master-disable</span><br></pre></td></tr></table></figure>
+
+<p><em>打开安全性与隐私，任何来源已显示</em></p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>若运行软件显示“打不开或者显示应用已损坏的情况”</li>
+<li>运行终端，输入以下命令，回车输入密码即可*</li>
+</ul>
+ <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">sudo xattr -d com.apple.quarantine &#x2F;Applications&#x2F;xxxx.app</span><br></pre></td></tr></table></figure>
+<p>其中 <del>xxxx.app</del> 指该应用的具体名称</p>
+<hr>
+]]></content>
+      <categories>
+        <category>MacOS</category>
+      </categories>
+      <tags>
+        <tag>MacOs</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>JavaMail的简单应用</title>
     <url>/2020/06/19/Javamail%E7%9A%84%E7%AE%80%E5%8D%95%E5%BA%94%E7%94%A8/</url>
     <content><![CDATA[<h1 id="JavaMail-的简单实现"><a href="#JavaMail-的简单实现" class="headerlink" title="JavaMail 的简单实现"></a>JavaMail 的简单实现</h1><blockquote>
@@ -109,34 +137,6 @@
         <tag>system</tag>
         <tag>win</tag>
         <tag>优盘启动</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Mac软件无法打开或已损坏情况</title>
-    <url>/2020/05/23/Mac%E8%BD%AF%E4%BB%B6%E6%97%A0%E6%B3%95%E6%89%93%E5%BC%80%E6%88%96%E5%B7%B2%E6%8D%9F%E5%9D%8F%E6%83%85%E5%86%B5/</url>
-    <content><![CDATA[<h1 id="关于Mac软件无法启动的解决办法"><a href="#关于Mac软件无法启动的解决办法" class="headerlink" title="关于Mac软件无法启动的解决办法"></a>关于Mac软件无法启动的解决办法</h1><p>出现已损坏无法打开解决办法：</p>
-<a id="more"></a>
-<ul>
-<li><p>请在系统偏好设置-安全性与隐私-选择【任何来源】，即可使用。<br>若无该选项：<br><em>运行终端，输入以下命令，回车输入密码</em> </p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">sudo spctl --master-disable</span><br></pre></td></tr></table></figure>
-
-<p><em>打开安全性与隐私，任何来源已显示</em></p>
-</li>
-</ul>
-<hr>
-<ul>
-<li>若运行软件显示“打不开或者显示应用已损坏的情况”</li>
-<li>运行终端，输入以下命令，回车输入密码即可*</li>
-</ul>
- <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">sudo xattr -d com.apple.quarantine &#x2F;Applications&#x2F;xxxx.app</span><br></pre></td></tr></table></figure>
-<p>其中 <del>xxxx.app</del> 指该应用的具体名称</p>
-<hr>
-]]></content>
-      <categories>
-        <category>MacOS</category>
-      </categories>
-      <tags>
-        <tag>MacOs</tag>
       </tags>
   </entry>
 </search>
